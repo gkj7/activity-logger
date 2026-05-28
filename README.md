@@ -1,17 +1,34 @@
-# life_logger
+# Activity Logger
 
-A new Flutter project.
+Android app that tracks your phone usage and lets you log your day in a clean 24-hour timeline.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Auto phone usage tracking via Android Usage Stats API
+- 24hr vertical timeline with hourly blocks
+- Tap any block to see per-app breakdown
+- Manual entries for off-phone time with mood emoji and category tags
+- Auto sleep detection with confirm/edit/dismiss
+- Daily and weekly stats — sleep, on-screen, off-screen time
+- Material Design 3 with full dark mode support
 
-A few resources to get you started if this is your first Flutter project:
+## Built With
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- SQLite (sqflite)
+- Android Usage Stats API
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Setup
+
+```bash
+git clone https://github.com/gkj7/activity-logger.git
+cd activity-logger
+flutter pub get
+flutter run
+```
+
+Requires Android with Usage Access permission enabled.
+
+## License
+
+MIT
